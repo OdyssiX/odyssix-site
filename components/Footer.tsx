@@ -86,11 +86,12 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-zinc-500 md:mt-12 md:flex-row md:items-center md:justify-between">
           <p>© 2026 ODYSSIX. All rights reserved.</p>
-          <p>Smart Websites & Digital Systems</p>
+          <p>Smart Websites, Mini Apps & Digital Systems</p>
         </div>
       </div>
     </footer>
   );
 }
+
 
 
