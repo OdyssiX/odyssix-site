@@ -1,4 +1,5 @@
-﻿const trustPoints = [
+﻿import ContactForm from "./ContactForm";
+const trustPoints = [
   "Δωρεάν αρχική εκτίμηση",
   "Πρόταση με βάση τις ανάγκες σας",
   "Λύση προσαρμοσμένη στον κλάδο σας",
@@ -73,21 +74,7 @@ export default function FinalCTASection() {
             ))}
           </div>
 
-          <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
-            <a
-              href="mailto:odyssixdigital@gmail.com"
-              className="rounded-full bg-red-600 px-6 py-4 text-sm font-bold text-white shadow-[0_0_30px_rgba(220,38,38,0.28)] transition hover:bg-red-500 md:px-8"
-            >
-              Στείλτε email
-            </a>
-
-            <a
-              href="tel:+306973497371"
-              className="rounded-full border border-white/15 bg-white/[0.04] px-6 py-4 text-sm font-bold text-white transition hover:bg-white/10 md:px-8"
-            >
-              Καλέστε στο 6973497371
-            </a>
-          </div>
+          <ContactForm />
 
           <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
             <p className="text-sm leading-7 text-zinc-400">
@@ -116,3 +103,4 @@ export default function FinalCTASection() {
     </section>
   );
 }
+
