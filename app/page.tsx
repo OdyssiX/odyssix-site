@@ -1,4 +1,5 @@
-﻿import SolutionsSection from "../components/SolutionsSection";
+﻿import FAQSection from "../components/FAQSection";
+import SolutionsSection from "../components/SolutionsSection";
 import Footer from "../components/Footer";
 import FinalCTASection from "../components/FinalCTASection";
 import PackagesSection from "../components/PackagesSection";
@@ -50,12 +51,15 @@ export default function Home() {
 
       <PackagesSection />
 
+      <FAQSection />
+
       <FinalCTASection />
 
       <Footer />
     </main>
   );
 }
+
 
 
 
