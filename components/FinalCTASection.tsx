@@ -4,6 +4,21 @@
   "Λύση προσαρμοσμένη στον κλάδο σας",
 ];
 
+const nextSteps = [
+  {
+    title: "Μας λέτε τι χρειάζεστε",
+    text: "Στέλνετε μήνυμα ή καλείτε και μας περιγράφετε σύντομα την επιχείρησή σας.",
+  },
+  {
+    title: "Βλέπουμε την καλύτερη λύση",
+    text: "Συζητάμε αν σας ταιριάζει Smart Starter, Smart Business, Smart Pro ή ειδική λύση.",
+  },
+  {
+    title: "Παίρνετε καθαρή πρόταση",
+    text: "Σας δίνουμε ξεκάθαρη κατεύθυνση για το τι μπορεί να φτιαχτεί και ποια είναι τα επόμενα βήματα.",
+  },
+];
+
 export default function FinalCTASection() {
   return (
     <section id="contact" className="px-5 py-20 md:px-6 md:py-24">
@@ -17,13 +32,13 @@ export default function FinalCTASection() {
           </p>
 
           <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-            Θέλετε η επιχείρησή σας να αποκτήσει ένα smart website;
+            Θέλετε να δούμε τι χρειάζεται η επιχείρησή σας;
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-300">
-            Μπορούμε να δούμε μαζί τι χρειάζεται η επιχείρησή σας και να σας
-            προτείνουμε μια λύση που ταιριάζει στις ανάγκες, τον κλάδο και τον
-            προϋπολογισμό σας.
+            Μπορούμε να κάνουμε μια πρώτη σύντομη συζήτηση και να δούμε ποια
+            λύση ODYSSIX ταιριάζει καλύτερα στην επιχείρησή σας, στον κλάδο σας
+            και στον στόχο σας.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -37,20 +52,60 @@ export default function FinalCTASection() {
             ))}
           </div>
 
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {nextSteps.map((step, index) => (
+              <div
+                key={step.title}
+                className="rounded-3xl border border-white/10 bg-black/20 p-5 text-left"
+              >
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-600 text-sm font-bold text-white">
+                  {index + 1}
+                </div>
+
+                <h3 className="text-base font-bold text-white">
+                  {step.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-7 text-zinc-400">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+
           <div className="mt-10 flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
             <a
               href="mailto:odyssixdigital@gmail.com"
               className="rounded-full bg-red-600 px-6 py-4 text-sm font-bold text-white shadow-[0_0_30px_rgba(220,38,38,0.28)] transition hover:bg-red-500 md:px-8"
             >
-              Ζητήστε δωρεάν εκτίμηση
+              Στείλτε email
             </a>
 
             <a
               href="tel:+306973497371"
               className="rounded-full border border-white/15 bg-white/[0.04] px-6 py-4 text-sm font-bold text-white transition hover:bg-white/10 md:px-8"
             >
-              Καλέστε για συζήτηση
+              Καλέστε στο 6973497371
             </a>
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] px-5 py-4">
+            <p className="text-sm leading-7 text-zinc-400">
+              Email:{" "}
+              <a
+                href="mailto:odyssixdigital@gmail.com"
+                className="font-semibold text-red-300 hover:text-red-200"
+              >
+                odyssixdigital@gmail.com
+              </a>{" "}
+              · Τηλέφωνο:{" "}
+              <a
+                href="tel:+306973497371"
+                className="font-semibold text-red-300 hover:text-red-200"
+              >
+                6973497371
+              </a>
+            </p>
           </div>
 
           <p className="mt-6 text-xs text-zinc-500">
@@ -61,5 +116,3 @@ export default function FinalCTASection() {
     </section>
   );
 }
-
-
