@@ -1,4 +1,5 @@
-﻿import Header from "./Header";
+﻿import VillaDemoPreview from "./VillaDemoPreview";
+import Header from "./Header";
 import Footer from "./Footer";
 
 const demoData = {
@@ -134,30 +135,36 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_0_70px_rgba(220,38,38,0.08)]">
-            <div className="rounded-3xl border border-white/10 bg-[#0D111A] p-5">
-              <div className="mb-5 flex items-center gap-2">
-                <span className="h-3 w-3 rounded-full bg-red-500" />
-                <span className="h-3 w-3 rounded-full bg-white/30" />
-                <span className="h-3 w-3 rounded-full bg-white/20" />
-              </div>
+          <div>
+            {demoKey === "villa" ? (
+              <VillaDemoPreview />
+            ) : (
+              <div className="rounded-[2rem] border border-white/10 bg-white/[0.04] p-6 shadow-[0_0_70px_rgba(220,38,38,0.08)]">
+                <div className="rounded-3xl border border-white/10 bg-[#0D111A] p-5">
+                  <div className="mb-5 flex items-center gap-2">
+                    <span className="h-3 w-3 rounded-full bg-red-500" />
+                    <span className="h-3 w-3 rounded-full bg-white/30" />
+                    <span className="h-3 w-3 rounded-full bg-white/20" />
+                  </div>
 
-              <div className="space-y-4">
-                <div className="h-8 w-2/3 rounded bg-white/15" />
-                <div className="h-4 w-full rounded bg-white/10" />
-                <div className="h-4 w-4/5 rounded bg-white/10" />
-                <div className="grid grid-cols-2 gap-4 pt-4">
-                  <div className="h-28 rounded-2xl bg-red-600/25 ring-1 ring-red-500/20" />
-                  <div className="h-28 rounded-2xl bg-white/10" />
+                  <div className="space-y-4">
+                    <div className="h-8 w-2/3 rounded bg-white/15" />
+                    <div className="h-4 w-full rounded bg-white/10" />
+                    <div className="h-4 w-4/5 rounded bg-white/10" />
+                    <div className="grid grid-cols-2 gap-4 pt-4">
+                      <div className="h-28 rounded-2xl bg-red-600/25 ring-1 ring-red-500/20" />
+                      <div className="h-28 rounded-2xl bg-white/10" />
+                    </div>
+                    <div className="grid grid-cols-3 gap-3">
+                      <div className="h-16 rounded-xl bg-white/10" />
+                      <div className="h-16 rounded-xl bg-white/10" />
+                      <div className="h-16 rounded-xl bg-red-600/20" />
+                    </div>
+                    <div className="h-12 rounded-full bg-red-600/80" />
+                  </div>
                 </div>
-                <div className="grid grid-cols-3 gap-3">
-                  <div className="h-16 rounded-xl bg-white/10" />
-                  <div className="h-16 rounded-xl bg-white/10" />
-                  <div className="h-16 rounded-xl bg-red-600/20" />
-                </div>
-                <div className="h-12 rounded-full bg-red-600/80" />
               </div>
-            </div>
+            )}
           </div>
         </div>
       </section>
@@ -266,3 +273,4 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
     </main>
   );
 }
+
