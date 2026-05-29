@@ -4,6 +4,7 @@ const navLinks = [
   { label: "Αρχική", href: "/" },
   { label: "Smart Websites", href: "/#smart" },
   { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
   { label: "Λύσεις", href: "/#solutions" },
   { label: "Demos", href: "/#demos" },
   { label: "Πακέτα", href: "/#packages" },
@@ -68,4 +69,5 @@ export default function Header() {
     </header>
   );
 }
+
 
