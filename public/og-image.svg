@@ -1,0 +1,63 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#080A0F"/>
+
+  <g opacity="0.18">
+    <path d="M0 80H1200" stroke="white"/>
+    <path d="M0 160H1200" stroke="white"/>
+    <path d="M0 240H1200" stroke="white"/>
+    <path d="M0 320H1200" stroke="white"/>
+    <path d="M0 400H1200" stroke="white"/>
+    <path d="M0 480H1200" stroke="white"/>
+    <path d="M0 560H1200" stroke="white"/>
+    <path d="M120 0V630" stroke="white"/>
+    <path d="M240 0V630" stroke="white"/>
+    <path d="M360 0V630" stroke="white"/>
+    <path d="M480 0V630" stroke="white"/>
+    <path d="M600 0V630" stroke="white"/>
+    <path d="M720 0V630" stroke="white"/>
+    <path d="M840 0V630" stroke="white"/>
+    <path d="M960 0V630" stroke="white"/>
+    <path d="M1080 0V630" stroke="white"/>
+  </g>
+
+  <circle cx="930" cy="130" r="260" fill="#DC2626" opacity="0.22"/>
+  <circle cx="930" cy="130" r="160" fill="#DC2626" opacity="0.20"/>
+
+  <rect x="80" y="90" width="1040" height="450" rx="42" fill="#0D111A" stroke="white" stroke-opacity="0.10"/>
+
+  <g transform="translate(110 130)">
+    <rect width="86" height="86" rx="24" fill="#111827" stroke="#DC2626" stroke-opacity="0.55"/>
+    <circle cx="38" cy="43" r="21" stroke="white" stroke-width="8" stroke-linecap="round" stroke-dasharray="108 26"/>
+    <path d="M58 25L74 61" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+    <path d="M74 25L58 61" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+    <rect x="75" y="10" width="7" height="7" rx="2" fill="#EF4444"/>
+    <rect x="82" y="24" width="5" height="5" rx="1" fill="white" opacity="0.75"/>
+    <rect x="75" y="70" width="7" height="7" rx="2" fill="white" opacity="0.65"/>
+  </g>
+
+  <text x="220" y="165" fill="white" font-family="Arial, sans-serif" font-size="54" font-weight="900" letter-spacing="12">
+    ODYSSIX
+  </text>
+
+  <text x="220" y="205" fill="#FCA5A5" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="6">
+    SMART WEBSITES &amp; DIGITAL SYSTEMS
+  </text>
+
+  <text x="110" y="315" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="900">
+    Ιστοσελίδες που λειτουργούν
+  </text>
+
+  <text x="110" y="390" fill="white" font-family="Arial, sans-serif" font-size="62" font-weight="900">
+    σαν εφαρμογές.
+  </text>
+
+  <text x="110" y="465" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="28" font-weight="500">
+    Smart websites, mini apps, QR εργαλεία και ψηφιακά συστήματα για επιχειρήσεις.
+  </text>
+
+  <rect x="110" y="500" width="230" height="46" rx="23" fill="#DC2626"/>
+  <text x="145" y="531" fill="white" font-family="Arial, sans-serif" font-size="17" font-weight="800" letter-spacing="2">
+    ODYSSIX SITE
+  </text>
+</svg>
+
