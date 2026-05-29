@@ -5,7 +5,7 @@ const navLinks = [
   { label: "Smart Websites", href: "/#smart" },
   { label: "Υπηρεσίες", href: "/services" },
   { label: "Για την ODYSSIX", href: "/about" },
-  { label: "Demos", href: "/#demos" },
+  { label: "Demos", href: "/demos" },
   { label: "Πακέτα", href: "/#packages" },
 ];
 
@@ -68,3 +68,4 @@ export default function Header() {
     </header>
   );
 }
+

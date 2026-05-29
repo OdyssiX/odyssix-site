@@ -14,7 +14,7 @@ const links = [
   { label: "About", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Λύσεις", href: "/#solutions" },
-  { label: "Demo Projects", href: "/#demos" },
+  { label: "Demo Projects", href: "/demos" },
   { label: "Πακέτα", href: "/#packages" },
   { label: "Επικοινωνία", href: "/#contact" },
   { label: "Privacy", href: "/privacy" },
@@ -96,6 +96,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 
