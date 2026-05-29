@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/demos/restaurant-smart-hub",
     "/demos/restaurant-smart-hub/live-preview",
     "/demos/event-smart-page",
+    "/demos/event-smart-page/live-preview",
   ];
 
   return routes.map((route) => ({
@@ -24,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.8,
   }));
 }
+
 
 
 
