@@ -49,10 +49,14 @@ export default function RestaurantLivePreviewPage() {
   return (
     <main className="min-h-screen bg-[#080A0F] text-white">
       <section className="relative min-h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-950 via-[#17090A] to-black" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/demo/restaurant/hero.jpg')" }}
+        />
         <div className="absolute left-0 top-0 h-96 w-96 -translate-x-1/3 -translate-y-1/3 rounded-full bg-red-600/25 blur-[120px]" />
         <div className="absolute right-0 bottom-0 h-96 w-96 translate-x-1/3 translate-y-1/3 rounded-full bg-orange-500/15 blur-[120px]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:56px_56px] opacity-25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#080A0F]" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-6 md:px-6">
           <a
@@ -108,7 +112,10 @@ export default function RestaurantLivePreviewPage() {
 
           <div className="rounded-[2rem] border border-white/15 bg-black/35 p-4 shadow-[0_30px_90px_rgba(0,0,0,0.45)] backdrop-blur">
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0D111A]">
-              <div className="h-64 bg-gradient-to-br from-red-950 via-zinc-950 to-black">
+              <div
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: "url('/demo/restaurant/gallery-1.jpg')" }}
+              >
                 <div className="flex h-full items-end bg-[radial-gradient(circle_at_35%_20%,rgba(255,255,255,0.16),transparent_28%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.88))] p-6">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.25em] text-red-300">
@@ -144,6 +151,49 @@ export default function RestaurantLivePreviewPage() {
         </div>
       </section>
 
+            <section className="border-y border-white/10 bg-white/[0.03] px-5 py-20 md:px-6 md:py-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.3em] text-red-400">
+                Restaurant Gallery
+              </p>
+
+              <h2 className="mt-4 text-3xl font-bold md:text-5xl">
+                Premium εικόνα για τον χώρο, το φαγητό και την εμπειρία
+              </h2>
+            </div>
+
+            <p className="text-lg leading-8 text-zinc-400">
+              Στο πραγματικό project εδώ μπαίνουν φωτογραφίες του χώρου, των πιάτων,
+              του μενού, των τραπεζιών και της συνολικής εμπειρίας του εστιατορίου.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-4">
+            <div
+              className="h-72 rounded-[2rem] border border-white/10 bg-cover bg-center md:col-span-2 md:row-span-2 md:h-auto"
+              style={{ backgroundImage: "url('/demo/restaurant/hero.jpg')" }}
+            />
+            <div
+              className="h-48 rounded-[2rem] border border-white/10 bg-cover bg-center"
+              style={{ backgroundImage: "url('/demo/restaurant/gallery-1.jpg')" }}
+            />
+            <div
+              className="h-48 rounded-[2rem] border border-white/10 bg-cover bg-center"
+              style={{ backgroundImage: "url('/demo/restaurant/gallery-2.jpg')" }}
+            />
+            <div
+              className="h-48 rounded-[2rem] border border-white/10 bg-cover bg-center"
+              style={{ backgroundImage: "url('/demo/restaurant/gallery-3.jpg')" }}
+            />
+            <div
+              className="h-48 rounded-[2rem] border border-white/10 bg-cover bg-center"
+              style={{ backgroundImage: "url('/demo/restaurant/gallery-1.jpg')" }}
+            />
+          </div>
+        </div>
+      </section>
       <section id="menu" className="border-y border-white/10 bg-white/[0.03] px-5 py-20 md:px-6 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
@@ -169,7 +219,10 @@ export default function RestaurantLivePreviewPage() {
                 key={item.title}
                 className="rounded-3xl border border-white/10 bg-[#0D111A] p-6 transition hover:-translate-y-1 hover:border-red-500/40"
               >
-                <div className="mb-5 h-40 rounded-3xl bg-gradient-to-br from-red-950 via-zinc-900 to-black" />
+                <div
+                  className="mb-5 h-40 rounded-3xl bg-cover bg-center"
+                  style={{ backgroundImage: "url('/demo/restaurant/gallery-2.jpg')" }}
+                />
                 <div className="flex items-start justify-between gap-4">
                   <h3 className="text-xl font-bold">{item.title}</h3>
                   <span className="rounded-full bg-red-600 px-3 py-1 text-sm font-bold text-white">
@@ -355,3 +408,6 @@ export default function RestaurantLivePreviewPage() {
     </main>
   );
 }
+
+
+
