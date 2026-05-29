@@ -18,6 +18,7 @@ const links = [
   { label: "Πακέτα", href: "/#packages" },
   { label: "Επικοινωνία", href: "/#contact" },
   { label: "Privacy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
 ];
 
 export default function Footer() {
@@ -95,6 +96,7 @@ export default function Footer() {
     </footer>
   );
 }
+
 
 
 
