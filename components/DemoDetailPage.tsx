@@ -1,4 +1,6 @@
-﻿import VillaDemoPreview from "./VillaDemoPreview";
+﻿import VillaLivePreviewSection from "./VillaLivePreviewSection";
+import VillaDemoStorySection from "./VillaDemoStorySection";
+import VillaDemoPreview from "./VillaDemoPreview";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -169,6 +171,10 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
         </div>
       </section>
 
+      {demoKey === "villa" && <VillaLivePreviewSection />}
+
+      {demoKey === "villa" && <VillaDemoStorySection />}
+
       <section className="border-y border-white/10 bg-white/[0.03] px-6 py-20">
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-2">
           <div className="rounded-3xl border border-white/10 bg-[#0D111A] p-8">
@@ -220,6 +226,10 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
           </div>
         </div>
       </section>
+
+      {demoKey === "villa" && <VillaLivePreviewSection />}
+
+      {demoKey === "villa" && <VillaDemoStorySection />}
 
       <section className="border-y border-white/10 bg-white/[0.03] px-6 py-20">
         <div className="mx-auto max-w-7xl">
@@ -273,4 +283,7 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
     </main>
   );
 }
+
+
+
 
