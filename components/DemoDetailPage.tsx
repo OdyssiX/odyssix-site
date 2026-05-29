@@ -129,10 +129,10 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
               </a>
 
               <a
-                href="/#demos"
+                href={demoKey === "villa" ? "/demos/villa-smart-site/live-preview" : "/#demos"}
                 className="rounded-full border border-white/15 bg-white/[0.03] px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
               >
-                Δείτε όλα τα demos
+                {demoKey === "villa" ? "Δείτε live preview" : "Δείτε όλα τα demos"}
               </a>
             </div>
           </div>
@@ -283,6 +283,7 @@ export default function DemoDetailPage({ demoKey }: { demoKey: DemoKey }) {
     </main>
   );
 }
+
 
 
 

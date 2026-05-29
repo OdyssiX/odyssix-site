@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/privacy",
     "/terms",
     "/demos/villa-smart-site",
+    "/demos/villa-smart-site/live-preview",
     "/demos/restaurant-smart-hub",
     "/demos/event-smart-page",
   ];
@@ -22,4 +23,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route === "" ? 1 : 0.8,
   }));
 }
+
 
