@@ -51,10 +51,14 @@ export default function EventLivePreviewPage() {
   return (
     <main className="min-h-screen bg-[#080A0F] text-white">
       <section className="relative min-h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-zinc-950 via-[#1B0B13] to-black" />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/demo/event/hero.jpg')" }}
+        />
         <div className="absolute left-0 top-0 h-96 w-96 -translate-x-1/3 -translate-y-1/3 rounded-full bg-red-600/25 blur-[120px]" />
         <div className="absolute right-0 bottom-0 h-96 w-96 translate-x-1/3 translate-y-1/3 rounded-full bg-pink-500/15 blur-[120px]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:56px_56px] opacity-25" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-black/25" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-[#080A0F]" />
 
         <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-5 py-6 md:px-6">
           <a
@@ -110,7 +114,10 @@ export default function EventLivePreviewPage() {
 
           <div className="rounded-[2rem] border border-white/15 bg-black/35 p-4 shadow-[0_30px_90px_rgba(0,0,0,0.45)] backdrop-blur">
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#0D111A]">
-              <div className="h-64 bg-gradient-to-br from-red-950 via-zinc-950 to-black">
+              <div
+                className="h-64 bg-cover bg-center"
+                style={{ backgroundImage: "url('/demo/event/gallery-1.jpg')" }}
+              >
                 <div className="flex h-full items-end bg-[radial-gradient(circle_at_35%_20%,rgba(255,255,255,0.16),transparent_28%),linear-gradient(to_bottom,transparent,rgba(0,0,0,0.88))] p-6">
                   <div>
                     <p className="text-xs font-bold uppercase tracking-[0.25em] text-red-300">
@@ -276,18 +283,50 @@ export default function EventLivePreviewPage() {
         </div>
 
         <div className="mt-12 grid gap-4 md:grid-cols-4">
-          {galleryCards.map((item, index) => (
-            <div
-              key={item}
-              className={
-                index === 0
-                  ? "flex h-72 items-end rounded-[2rem] border border-white/10 bg-gradient-to-br from-red-950 via-zinc-900 to-black p-6 md:col-span-2 md:row-span-2 md:h-auto"
-                  : "flex h-48 items-end rounded-[2rem] border border-white/10 bg-gradient-to-br from-zinc-900 via-[#1B0B13] to-black p-5"
-              }
-            >
-              <p className="font-bold text-white">{item}</p>
+          <div
+            className="flex h-72 items-end rounded-[2rem] border border-white/10 bg-cover bg-center p-6 md:col-span-2 md:row-span-2 md:h-auto"
+            style={{ backgroundImage: "url('/demo/event/hero.jpg')" }}
+          >
+            <div className="rounded-2xl bg-black/45 px-4 py-3 backdrop-blur">
+              <p className="font-bold text-white">Main event atmosphere</p>
             </div>
-          ))}
+          </div>
+
+          <div
+            className="flex h-48 items-end rounded-[2rem] border border-white/10 bg-cover bg-center p-5"
+            style={{ backgroundImage: "url('/demo/event/gallery-1.jpg')" }}
+          >
+            <div className="rounded-xl bg-black/45 px-3 py-2 backdrop-blur">
+              <p className="text-sm font-bold text-white">Live crowd</p>
+            </div>
+          </div>
+
+          <div
+            className="flex h-48 items-end rounded-[2rem] border border-white/10 bg-cover bg-center p-5"
+            style={{ backgroundImage: "url('/demo/event/gallery-2.jpg')" }}
+          >
+            <div className="rounded-xl bg-black/45 px-3 py-2 backdrop-blur">
+              <p className="text-sm font-bold text-white">DJ / stage</p>
+            </div>
+          </div>
+
+          <div
+            className="flex h-48 items-end rounded-[2rem] border border-white/10 bg-cover bg-center p-5"
+            style={{ backgroundImage: "url('/demo/event/gallery-3.jpg')" }}
+          >
+            <div className="rounded-xl bg-black/45 px-3 py-2 backdrop-blur">
+              <p className="text-sm font-bold text-white">Lights show</p>
+            </div>
+          </div>
+
+          <div
+            className="flex h-48 items-end rounded-[2rem] border border-white/10 bg-cover bg-center p-5"
+            style={{ backgroundImage: "url('/demo/event/gallery-4.jpg')" }}
+          >
+            <div className="rounded-xl bg-black/45 px-3 py-2 backdrop-blur">
+              <p className="text-sm font-bold text-white">Celebration</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -349,3 +388,5 @@ export default function EventLivePreviewPage() {
     </main>
   );
 }
+
+
