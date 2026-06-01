@@ -1,4 +1,5 @@
-﻿import OdyssixLogo from "./OdyssixLogo";
+import OdyssixLogo from "./OdyssixLogo";
+import SocialLinks from "./SocialLinks";
 
 const services = [
   "Smart Websites",
@@ -38,57 +39,77 @@ export default function Footer() {
             <p className="mt-5 text-sm font-semibold text-red-300">
               Ιστοσελίδες που λειτουργούν σαν εφαρμογές.
             </p>
+
+            <div className="mt-7">
+              <p className="mb-3 text-xs font-bold uppercase tracking-[0.22em] text-zinc-500">
+                Social
+              </p>
+              <SocialLinks />
+            </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-[0.22em] text-white">
+            <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-white">
               Υπηρεσίες
             </h3>
 
-            <ul className="mt-5 space-y-3 text-sm text-zinc-400">
+            <div className="mt-5 grid gap-3">
               {services.map((service) => (
-                <li key={service}>{service}</li>
+                <p key={service} className="text-sm text-zinc-400">
+                  {service}
+                </p>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-[0.22em] text-white">
+            <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-white">
               Links
             </h3>
 
-            <ul className="mt-5 space-y-3 text-sm text-zinc-400">
+            <div className="mt-5 grid gap-3">
               {links.map((link) => (
-                <li key={link.href}>
-                  <a href={link.href} className="transition hover:text-white">
-                    {link.label}
-                  </a>
-                </li>
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm text-zinc-400 transition hover:text-white"
+                >
+                  {link.label}
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-bold uppercase tracking-[0.22em] text-white">
+            <h3 className="text-xs font-bold uppercase tracking-[0.25em] text-white">
               Επικοινωνία
             </h3>
 
-            <div className="mt-5 space-y-3 text-sm text-zinc-400">
-              <p>Email: odyssixdigital@gmail.com</p>
-              <p>Τηλέφωνο: 6973497371</p>
-              <p>Κρήτη, Ελλάδα</p>
-            </div>
+            <div className="mt-5 grid gap-3 text-sm text-zinc-400">
+              <a
+                href="mailto:odyssixdigital@gmail.com"
+                className="transition hover:text-white"
+              >
+                Email: odyssixdigital@gmail.com
+              </a>
 
-            <a
-              href="#contact"
-              className="mt-6 inline-flex rounded-full border border-red-500/30 bg-red-500/10 px-5 py-2 text-sm font-semibold text-red-300 transition hover:bg-red-500/20"
-            >
-              Ζητήστε εκτίμηση
-            </a>
+              <a href="tel:+306973497371" className="transition hover:text-white">
+                Τηλέφωνο: 6973497371
+              </a>
+
+              <p>Κρήτη, Ελλάδα</p>
+
+              <a
+                href="/#contact"
+                className="mt-2 inline-flex w-fit rounded-full border border-red-500/40 bg-red-600/10 px-5 py-2 text-xs font-bold text-red-200 transition hover:bg-red-600 hover:text-white"
+              >
+                Ζητήστε εκτίμηση
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-zinc-500 md:mt-12 md:flex-row md:items-center md:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-zinc-500 md:flex-row md:items-center md:justify-between">
           <p>© 2026 ODYSSIX. All rights reserved.</p>
           <p>Smart Websites, Mini Apps & Digital Systems</p>
         </div>
@@ -96,12 +117,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-
-
-
-
-
-
-
-
